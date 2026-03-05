@@ -1,0 +1,10 @@
+[Unit]
+Description=lora_pkt_fwd exec service
+
+[Service]
+Type=exec
+ExecStart=/home/pi/start.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
