@@ -55,6 +55,27 @@ scp lora_pkt_fwd utilisateur@IP_DU_PI:/chemin/destination/
 # Lancement
 ./lora_pkt_fwd
 ```
+## Exemples
+
+```text
+# Tout par défaut (14 dBm, SF7, 868.1 MHz, 255 octets)
+./lora_pkt_fwd
+
+# Changer uniquement la puissance à 20 dBm
+./lora_pkt_fwd 20
+
+# 20 dBm + SF12
+./lora_pkt_fwd 20 12
+
+# 20 dBm + SF12 + 867.3 MHz
+./lora_pkt_fwd 20 12 867300000
+
+# Les 4 paramètres : 10 dBm, SF9, 868.3 MHz, 51 octets
+./lora_pkt_fwd 10 9 868300000 51
+
+# Puissance max, SF7, fréquence par défaut, petit payload
+./lora_pkt_fwd 27 7 868100000 16
+```
 
 ## Autres branches disponibles
 
